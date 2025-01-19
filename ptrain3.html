@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Positivity Module 1</title>
+  <style>
+    /* General Reset */
+    body, h1, h2, h3, p, blockquote, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: lightyellow;
+      color: #333;
+    }
+
+    /* Header Section */
+    .main-header {
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .main-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .main-header h2 {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    /* Quote Section */
+    blockquote {
+      background-color: #e8f5e9;
+      border-left: 4px solid #4caf50;
+      padding: 15px 20px;
+      margin: 20px auto 40px;
+      width: 80%;
+      font-style: italic;
+      color: #555;
+      font-size: 16px;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    /* Main Content */
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 28px;
+      color: #4caf50;
+      margin-bottom: 15px;
+    }
+
+    /* Rating Buttons */
+    .rating-buttons {
+      display: flex;
+      justify-content: space-evenly;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .rating-buttons button {
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .rating-buttons button:hover {
+      background-color: #45a049;
+    }
+
+    /* Feedback Message */
+    .feedback {
+      font-size: 18px;
+      font-style: italic;
+      color: #555;
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    /* Go Back and Next Buttons */
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      max-width: 400px;
+      margin: 20px auto;
+    }
+
+    .go-back-button, .next-module-button {
+      display: block;
+      text-align: center;
+      background-color: #333;
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+
+    .go-back-button:hover, .next-module-button:hover {
+      background-color: #575757;
+    }
+
+    .next-module-button {
+      display: none; /* Initially hidden */
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="main-header">
+    <h1>My 3 Things</h1>
+    <h2>Created by a Teen for A Teen</h2>
+  </header>
+
+  <!-- Quote Section -->
+  <blockquote cite="Diya Katre: Creator of this resource">
+    Having gone through my own share of struggles in life, resulting in placement in residential treatment for 2 years, I have learned a thing or two. These 3 techniques make it simple and apply to any situation in any of our lives! Give it a try!
+  </blockquote>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Learn</a></li>
+      <li><a href="products.html">Train</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h2>To Do:</h2>
+      <p>Now, expand this to your relationship with others. Now that you have practiced uplifting words to boost your self-confidence and self-efficacy, which is feeling like you can accomplish what you set your mind to, you can now practice seeing the positive in others. Remember the words you speak will benefit from positivity to. Keep telling yourself you have got this. 
+        <pre> 
+          
+          Action Items: share your positivity with others
+        </pre>
+      </p>
+    </section>
+
+    <section>
+      <h2>Rate Your Progress:</h2>
+      <div class="rating-buttons">
+        <button onclick="rateProgress(1)">1: Needs More Practice</button>
+        <button onclick="rateProgress(2)">2: Getting There</button>
+        <button onclick="rateProgress(3)">3: I've Got This</button>
+      </div>
+    </section>
+
+    <section>
+      <p id="feedback" class="feedback"></p>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+      <a href="products.html" class="go-back-button">Go Back</a>
+      <a href="gtrain1.html" id="nextModuleButton" class="next-module-button">Next Module</a>
+    </div>
+  </main>
+
+  <script>
+    function rateProgress(value) {
+      const feedback = document.getElementById("feedback");
+      const nextModuleButton = document.getElementById("nextModuleButton");
+
+      // Display feedback based on the value selected
+      if (value === 1 || value === 2) {
+        feedback.textContent = "Keep trying! You will get there!";
+        nextModuleButton.style.display = "none"; // Hide Next Module button
+      } else if (value === 3) {
+        feedback.textContent = "Congratulations! You got this! Move on to the next module.";
+        nextModuleButton.style.display = "block"; // Show Next Module button
+      }
+    }
+  </script>
+</body>
+</html>
