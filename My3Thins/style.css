@@ -1,0 +1,99 @@
+body{
+    margin: 0px;
+}
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: grey
+}
+/* styles everything in the main element in each*/
+
+h1 {
+    text-align:center; 
+    color: white;
+}
+
+h2{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.navbar ul{
+    list-style-type: none;
+    background-color: maroon;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display:block;
+    text-align: center;
+}
+.navbar a:hover{
+    background-color: black(100%)
+}
+/*supposed to change color when hovering over nav bar*/
+.navbar li{
+    float: left;
+}
+
+.main-header {
+background-color: white;
+    background-image: url("image folder/spiralright.webp");
+   background-blend-mode: multiply;
+   background-size: cover;
+   padding-bottom: 10px;
+   padding-top: 0px;
+}
+/* this is for the image in the top header*/
+
+* {
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+.about-band-image {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+
+}
+
+.secondimage {
+    float: right;
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.positivitycenter{
+    padding-left: 50px;
+}
+
+.pimage {
+    float: right;
+    height: 350px;
+    width: 400px;
+    margin: 15px;
+}
+
+.gratitudecenter {
+    padding-left: 200px;
+}
+.gratitudebutton {
+    padding-left: 50px;
+}
+
+.positivitybutton {
+    padding-left: 50px;
+}
+.purposecenter{
+    padding-left:200px;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Train - My 3 Things</title>
+  <style>
+    /* General Reset */
+    body, h1, h2, h3, p, blockquote, ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: lightyellow;
+      color: #333;
+    }
+
+    /* Header Section */
+    .main-header {
+      background-color: #4caf50;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .main-header h1 {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .main-header h2 {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    /* Quote Section */
+    blockquote {
+      background-color: #e8f5e9;
+      border-left: 4px solid #4caf50;
+      padding: 15px 20px;
+      margin: 20px auto 40px;
+      width: 80%;
+      font-style: italic;
+      color: #555;
+      font-size: 16px;
+    }
+
+    /* Navigation Bar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar ul li {
+      margin: 0 15px;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 10px 15px;
+      display: block;
+    }
+
+    .navbar ul li a:hover {
+      background-color: #575757;
+      border-radius: 5px;
+    }
+
+    /* Main Content */
+    main {
+      padding: 20px;
+      max-width: 1000px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section h2 {
+      font-size: 28px;
+      color: #4caf50;
+      margin-bottom: 15px;
+    }
+
+    /* Module Grid */
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .module-item {
+      text-align: center;
+    }
+
+    .module-item button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .module-item img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .module-item img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    .module-item span {
+      display: block;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="main-header">
+    <h1>My 3 Things</h1>
+    <h2>Created by a Teen for A Teen</h2>
+  </header>
+
+  <!-- Quote Section -->
+  <blockquote cite="Diya Katre: Creator of this resource">
+    Having gone through my own share of struggles in life, resulting in placement in residential treatment for 2 years, I have learned a thing or two. These 3 techniques make it simple and apply to any situation in any of our lives! Give it a try!
+  </blockquote>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Learn</a></li>
+      <li><a href="products.html">Train</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Positivity Section -->
+    <section>
+      <h2>Positivity</h2>
+      <div class="module-grid">
+        <div class="module-item">
+          <button onclick="location.href='ptrain1.html'">
+            <img src="image folder/lets.webp" alt="Positivity Module 1">
+          </button>
+          <span>Module 1: Let's Get Started</span>
+        </div>
+        <div class="module-item">
+          <button onclick="location.href='ptrain2.html'">
+            <img src="image folder/integrating.webp" alt="Positivity Module 2">
+          </button>
+          <span>Module 2: Integrating Positivity</span>
+        </div>
+        <div class="module-item">
+          <button onclick="location.href='ptrain3.html'">
+            <img src="image folder/sharing positivity.webp" alt="Positivity Module 3">
+          </button>
+          <span>Module 3: Sharing Positivity</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Gratitude</h2>
+      <div class="module-grid">
+        <div class="module-item">
+          <button onclick="location.href='gtrain1.html'">
+            <img src="image folder/understanding gratitude.webp" alt="Gratitude Module 1">
+          </button>
+          <span>Module 1: Let's Get Started</span>
+        </div>
+        <div class="module-item">
+          <button onclick="location.href='gtrain2.html'">
+            <img src="image folder/integratiting grat.webp" alt="Gratitude Module 2">
+          </button>
+          <span>Module 2: Integrating Gratitude</span>
+        </div>
+        <div class="module-item">
+          <button onclick="location.href='gtrain3.html'">
+            <img src="image folder/sharing gratitude.webp" alt="Gratitude Module 3">
+          </button>
+          <span>Module 3: Sharing Gratitude</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Purpose Section -->
+    <section>
+      <h2>Purpose</h2>
+      <div class="module-grid">
+        <div class="module-item">
+          <button onclick="location.href='putrain1.html'">
+            <img src="image folder/Leaning into your purpose.webp" alt="Purpose Module 1">
+          </button>
+          <span>Module 1: Leaning into your purpose</span>
+        </div>
+        <div class="module-item">
+          <button onclick="location.href='putrain2.html'">
+            <img src="image folder/Understanding purpose.webp" alt="Purpose Module 2">
+          </button>
+          <span>Module 2: Understanding Purpose</span>
+        </div>
+        <div class="module-item">
+          <button onclick="location.href='putrain3.html'">
+            <img src="image folder/Sharing your message.webp" alt="Purpose Module 3">
+          </button>
+          <span>Module 3: Sharing Your Message</span>
+        </div>
+      </div>
+    </section>
+    
+  </main>
+ <!--<script src="ptrain.js"></script> -->
+</body>
+</html>
