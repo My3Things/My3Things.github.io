@@ -41,7 +41,7 @@ h2{
 
 .main-header {
 background-color: white;
-    background-image: url("image folder/spiralright.webp");
+    background-image: url("spiralright.webp");
    background-blend-mode: multiply;
    background-size: cover;
    padding-bottom: 10px;
